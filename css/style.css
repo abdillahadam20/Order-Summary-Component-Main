@@ -35,19 +35,23 @@
   body .card .card-body .card-annual {
     display: flex;
     justify-content: center;
-    background-color: #e0e8ff;
+    background-color: #f5f7ff;
     width: 300px;
     margin: 0 auto;
     border-radius: 10px;
     position: relative;
   }
-  body .card .card-body .card-annual img {
-    position: relative;
+  body .card .card-body .card-annual .music {
     margin-top: 20px;
+    z-index: 9999;
+    position: relative;
+    top: -10px;
+    left: 5px;
   }
   body .card .card-body .card-annual .plan {
     position: relative;
     left: 25px;
+    top: -10px;
     margin-top: 20px;
     font-weight: 700;
   }
@@ -56,13 +60,22 @@
     margin-top: 50px;
     line-height: 1rem;
     left: -65px;
+    top: -10px;
     color: #7280a7;
   }
   body .card .card-body .card-annual a {
     position: relative;
-    left: 10px;
-    margin-top: 31px;
+    left: -5px;
+    top: 0px;
+    margin-top: 22px;
     font-weight: 700;
+  }
+  body .card .card-body .card-annual a:active {
+    text-decoration: none;
+  }
+  body .card .card-body .card-annual a:hover {
+    text-decoration: none;
+    opacity: 0.8;
   }
   body .card .card-body .button {
     position: relative;
@@ -89,6 +102,9 @@
     -webkit-box-shadow: -1px -1px 25px -5px rgba(0, 0, 0, 0.47);
     -moz-box-shadow: -1px -1px 25px -5px rgba(0, 0, 0, 0.47);
   }
+  body .card .card-body .button #submit:hover {
+    background-color: rgba(56, 41, 224, 0.8);
+  }
   body .card .card-body .button #cancel {
     display: flex;
     background-color: transparent;
@@ -99,6 +115,9 @@
     justify-content: center;
     font-weight: 700;
     position: relative;
+  }
+  body .card .card-body .button #cancel:hover {
+    color: #1f2f56;
   }
 }
 

@@ -41,20 +41,24 @@
         .card-annual {
           display: flex;
           justify-content: center;
-          background-color: variable.$PaleBlue;
+          background-color: variable.$VeryPaleBlue;
           width: 300px;
           margin: 0 auto;
           border-radius: 10px;
           position: relative;
 
-          img {
-            position: relative;
+          .music {
             margin-top: 20px;
+            z-index: 9999;
+            position: relative;
+            top: -10px;
+            left: 5px;
           }
 
           .plan {
             position: relative;
             left: 25px;
+            top: -10px;
             margin-top: 20px;
             font-weight: variable.$fontWeightBold;
           }
@@ -64,14 +68,25 @@
             margin-top: 50px;
             line-height: 1rem;
             left: -65px;
+            top: -10px;
             color: variable.$DesaturatedBlue;
           }
 
           a {
             position: relative;
-            left: 10px;
-            margin-top: 31px;
+            left: -5px;
+            top: 0px;
+            margin-top: 22px;
             font-weight: variable.$fontWeightBold;
+          }
+
+          a:active {
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: none;
+            opacity: 0.8;
           }
         }
 
@@ -101,6 +116,10 @@
             -moz-box-shadow: -1px -1px 25px -5px rgba(0,0,0,0.47);
           }
 
+          #submit:hover {
+            background-color: rgba(56, 41, 224, 0.8);
+          }
+
           #cancel {
             display: flex;
             background-color: transparent;
@@ -113,10 +132,11 @@
             position: relative;
           }
           
+          #cancel:hover {
+            color: variable.$DarkBlue;
+          }
         }
       }
     }
   }
-
-  
 }
