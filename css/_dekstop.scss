@@ -1,0 +1,122 @@
+@use 'variable';
+
+@media only screen and (max-width: 1440px) {
+  body {
+    background-color: variable.$PaleBlue;
+
+    .card {
+      background-color: #fff;
+      max-width: 400px;
+      height: 560px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+      .card-image {
+        img {
+          width: 400px;
+          border-radius: 20px 20px 0 0;
+        }
+      }
+
+      .card-body {
+        font-family: variable.$fontFamily;
+
+        h1 {
+          text-align: center;
+          font-weight: variable.$fontWeightVeryBold;
+        }
+
+        p {
+          text-align: center;
+          font-size: variable.$fontSize;
+          line-height: 0.6rem;
+          color: variable.$DesaturatedBlue;
+        }
+
+        .card-annual {
+          display: flex;
+          justify-content: center;
+          background-color: variable.$PaleBlue;
+          width: 300px;
+          margin: 0 auto;
+          border-radius: 10px;
+          position: relative;
+
+          img {
+            position: relative;
+            margin-top: 20px;
+          }
+
+          .plan {
+            position: relative;
+            left: 25px;
+            margin-top: 20px;
+            font-weight: variable.$fontWeightBold;
+          }
+
+          .price {
+            position: relative;
+            margin-top: 50px;
+            line-height: 1rem;
+            left: -65px;
+            color: variable.$DesaturatedBlue;
+          }
+
+          a {
+            position: relative;
+            left: 10px;
+            margin-top: 31px;
+            font-weight: variable.$fontWeightBold;
+          }
+        }
+
+        .button {
+          position: relative;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          #submit {
+            background-color: variable.$BrightBlue;
+            color: #fff;
+            width: 25em;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            top: -20px;
+            cursor: pointer;
+            font-family: variable.$fontFamily;
+            font-weight: variable.$fontWeightBold;
+            outline: none;
+            border: none;
+            box-shadow: -1px -1px 25px -5px rgba(0,0,0,0.47);
+            -webkit-box-shadow: -1px -1px 25px -5px rgba(0,0,0,0.47);
+            -moz-box-shadow: -1px -1px 25px -5px rgba(0,0,0,0.47);
+          }
+
+          #cancel {
+            display: flex;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: variable.$DesaturatedBlue;
+            justify-content: center;
+            font-weight: variable.$fontWeightBold;
+            position: relative;
+          }
+          
+        }
+      }
+    }
+  }
+
+  
+}

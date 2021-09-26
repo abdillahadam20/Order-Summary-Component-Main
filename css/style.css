@@ -1,4 +1,105 @@
-h1 {
-  color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@media only screen and (max-width: 1440px) {
+  body {
+    background-color: #e0e8ff;
+  }
+  body .card {
+    background-color: #fff;
+    max-width: 400px;
+    height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  body .card .card-image img {
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+  }
+  body .card .card-body {
+    font-family: "Red Hat Display", sans-serif;
+  }
+  body .card .card-body h1 {
+    text-align: center;
+    font-weight: 900;
+  }
+  body .card .card-body p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 0.6rem;
+    color: #7280a7;
+  }
+  body .card .card-body .card-annual {
+    display: flex;
+    justify-content: center;
+    background-color: #e0e8ff;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+  }
+  body .card .card-body .card-annual img {
+    position: relative;
+    margin-top: 20px;
+  }
+  body .card .card-body .card-annual .plan {
+    position: relative;
+    left: 25px;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  body .card .card-body .card-annual .price {
+    position: relative;
+    margin-top: 50px;
+    line-height: 1rem;
+    left: -65px;
+    color: #7280a7;
+  }
+  body .card .card-body .card-annual a {
+    position: relative;
+    left: 10px;
+    margin-top: 31px;
+    font-weight: 700;
+  }
+  body .card .card-body .button {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .card .card-body .button #submit {
+    background-color: #3829e0;
+    color: #fff;
+    width: 25em;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: -1px -1px 25px -5px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: -1px -1px 25px -5px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: -1px -1px 25px -5px rgba(0, 0, 0, 0.47);
+  }
+  body .card .card-body .button #cancel {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #7280a7;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+  }
 }
+
 /*# sourceMappingURL=style.css.map */
